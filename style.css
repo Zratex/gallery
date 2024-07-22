@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+}
+.whole-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75% !important;
+    width: 100%;
+    height: 100%;
+}
+
+.second-layer-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.thrird-layer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.lower-items {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    border: 1px solid;
+}
+
+.fourth-layer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#php-container {
+    background-color: purple;
+}
+
+#python {
+    background-color: lime;
+}
+
+#js-container {
+    background-color: yellow;
+}
+
+#sql-container {
+    background-color: aqua;
+}
+
+#cpp {
+    background-color: blue;
+}
+
+#java {
+    background-color: orange;
+}
+
+#git {
+    background-color: orangered;
+}
+
+#docker {
+    background-color: lightcyan;
+}
