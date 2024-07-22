@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <title>
+            Rock Paper Scissors
+        </title>
+        <link rel="stylesheet" media="screen" href="style_round.css">
+        <script src="round.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Rock. Paper. Scissors.</h1>
+        </header>
+        <main>
+            <div class="content">
+                <div id="versus">
+                    <h2 class="un">Player (You)</h2>
+                    <img src="Other_ressources/Images/SF VS.png">
+                    <h2 class="deux">Machine (CPU)</h2>
+                </div>
+                <h2>Set Score</h2>
+                <div id="setScore">
+                    <div id="setscoreHuman">0</div>
+                    <div>-</div>
+                    <div id="setscoreCPU">0</div>
+                </div>
+                <h2>Current Game Score</h2>
+                <div id="gameScore">
+                    <div id="gamescoreHuman">0</div>
+                    <div>-</div>
+                    <div id="gamescoreCPU">0</div>
+                </div>
+            </div>
+            <div id="rpsSelect">
+                <img id="op0" src="Other_ressources/Images/rock.png" alt="rock.png" onclick="rockSelected()">
+                <img id="op1" src="Other_ressources/Images/paper.png" alt="paper.png" onclick="paperSelected()">
+                <img id="op2" src="Other_ressources/Images/scissors.png" alt="scissors.png" onclick="scissorsSelected()">
+            </div>
+        </main>
+        <footer>
+            <div class="content">
+                <h2 id="commentary"></h2>
+                <h2 id="setAnnonce">Set 1</h2>
+                <button type="button" id="musicpause" onclick="muteMusic()">[EN LECTURE]</button>
+                <button type="button" id="next_set" onclick="next_round()">[NEXT SET]</button>
+            </div>
+            <audio id="OST">
+                <source src="OST Battle/Round 1 - Not A Little Girl.mp3">
+                Your Browser doesn't support the audio element. If you want to have the best experience of this website, deal with this issue or open it with another browser
+            </audio>
+            <audio id="Announcer">
+                <source src="Announcer/[Announcer]_SFIII_3rd_Strike_-_You_lose.mp3">
+            </audio>
+            <audio id="SFX">
+                <source src="SFX/Select.wav">
+            </audio>
+            <video autoplay muted loop id="VSScreen">
+                <source src="Other_ressources/video/VS_BG.mp4">Donc ceci est un texte qui n'est pas censé s'afficher dans la page. Il semblerait que le fichier en webm ait un rendu plus qualitatif mais demande bien plus de ressources matériel, ce qui explose la batterie des Laptop
+            </video>
+        </footer>
+    </body>
+</html>

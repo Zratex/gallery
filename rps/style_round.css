@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url(Other_ressources/Minecraft.ttf);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    color: white;
+}
+div {
+    color: white;
+}
+#versus {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    font-family: 'Minecraft';
+}
+#versus>img {
+    width: 10%;
+    height: 10%;
+}
+#versus>h2.un {
+    color: blue;
+}
+#versus>h2.deux {
+    color: red; 
+}
+#setScore {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 4em;
+    font-family: 'Minecraft';
+}
+#gameScore {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+#rpsSelect {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#next_set {
+    display: None;
+}
+#VSScreen {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+}
+main>div.content {
+    display: block;
+    background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+footer>div.content {
+    display: block;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+main {
+    width: 100%;
+}
+body {
+    margin: 0;
+}
+button {
+    background-color: darkblue;
+    color: white;
+    bottom: 0;
+}
